@@ -23,7 +23,7 @@ pipeline {
         stage('Install Frontend Dependencies') {
             steps {
                 echo 'Installing frontend deps...'
-                dir('CareFlow-FrontEnd') {
+                dir('template') {
                     sh 'npm install'
                 }
             }
